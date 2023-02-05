@@ -1,0 +1,18 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div:hover {
+    color: rgb(255, 0, 0);
+}
+
+div > p {
+    display: none;
+    color: rgb(198, 23, 17);
+    background-color: rgba(219, 93, 93, 0.811);
+}
+
+div:hover > p {
+    display: block;
+    
+}

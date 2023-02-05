@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML</title>
+</head>
+<body>
+    <H1>Imagem dinâmica</H1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+    <picture>
+       <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+    <p>
+        Tomar MUITO cuidado com as ordens de cada source lembrando que precisa colocar a tag source:media DENTRO da tag picture sempre da menor para a maior,lembrando que oq eu foi para o usuario ter uma experiencia melhor quando estiver utilizando meu site
+    </p>
+    <h1>Reproduzindo áudio</h1>
+    <p>Aprendendo a reproduzir aúdio</p>
+    
+   <audio preload="metadata" autoplay controls>
+    <source src="midia/o-holy-night.mp3" type="audio/mpeg">
+    <source src="midia/o-holy-night.mp3" type="audio/ogg">
+    <p>Infelizmente seu navegador não consegue reproduzir esse áudio.</p>
+    <a href="midia/o-holy-night.mp3">Clique aqui para fazer o download do áudio</a>
+   </audio>
+   <ul>
+    <li>
+        Apenas um desabafo positivo sobre tudo isso
+    </li>
+   </ul>
+   <p>
+    Ah sei lá,hahaha é tudo muito novo pra mim sabe? pode ser bem sincero? eu estou amando essa área,talvez seja por causa que ainda é só o começo (bem começo mesmo kkkk) mas sla,o que eu quero é que dê tudo certo nos meus estudos e que no futuro lá pra 2025 ou até menos né,vai saber kkkk eu já tenha meu primeiro emprego e ganhando meu salariozinho,só isso mesmo que eu quero,que eu fique bom em html,css,js,rs,react... enfim,são tantas linguagens que até fico perdido ahhhaha,é isso,estou feliz com meu primeiro notebookzinho,estudando... pra no futuro se Deus quiser eu estar trabalhando e ter minha vida tranquila e não depender mais dos outros sabe? Claro que amo minha família,eles me ajudam MUITOOOOOOOOOOOOOOO,muito mesmmo e sou muito grato por isso sabe? Mas eu tenho certeza que serei muito mais feliz quando tiver a minha própria condição financeira,e se Deus quiser,uma condição boa e estável,acho que me despeço aqui,e que dê tudo certo no que eu for fazer,valeu &lt;3
+   </p>
+</body>
+</html> 
