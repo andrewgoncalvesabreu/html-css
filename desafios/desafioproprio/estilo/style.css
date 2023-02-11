@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+:root {
+    --cor01: #E8F1F2;
+    --cor02: #1B98E0;
+    --cor03: #247BA0;
+    --cor04: #006494;
+    --cor05: #13293D;
+
+}
+
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-image: linear-gradient(to right, var(--cor02) , var(--cor04));
+}
+
+header > h1 {
+    background-color: black;
+    color: white;
+    padding: 30px;
+    margin: -8px
+}
+
+nav {
+    background-color: var(--cor04);
+    color: white;
+}
