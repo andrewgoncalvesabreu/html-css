@@ -13,23 +13,50 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            margin: auto;
+            position: relative;
         }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(60, 59, 59);
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgrey;
+        }
+
+        td.num {
+            text-align: right;
+        }
+
+        
 
         td,th {
             padding: 10px;
             border: 1px solid black;
+            
         }
 
-        thead {
-            background-color: gray;
+        tbody > tr:nth-child(odd) {
+            background-color: lightgray;
+        }
+
+        thead,tfoot{
+            background-color: rgb(60, 59, 59);
             color: white;
         }
 
         
+        
     </style>
 </head>
 <body>
-    <h1>Uso de tabelas grandes</h1>
+    <h1 style="text-align: center;">Uso de tabelas grandes</h1>
 
     <!--
         Anatomia para tabelas grandes
@@ -41,32 +68,62 @@
             tfoot
                 tr,td,th
     -->
-    <table>
-        <thead>
-            <tr>
-                <th>Estado</th>
-                <th>População</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>São Paulo</td>
-                <td>45 919 049</td>
-                
-            </tr>
-            <tr>
-                <td>Minas Gerais</td>
-                <td>21 168 791</td>
-            </tr>
-            <tr>
-                <td>Rio de Janeiro</td>
-                <td>17 264 943</td>
-            </tr>
-        </tbody>
-        <tfoot>
-            <th>Total de habitantes</th>
-            <td>0000</td>
-        </tfoot>
-    </table>
+    
+        <table>
+            <caption>População das unidades federativas</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Estado</th>
+                    <th scope="col" style="width: 50px;">População</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>São Paulo</td>
+                    <td class="num">45 919 049</td>
+        
+                </tr>
+                <tr>
+                    <td>Minas Gerais</td>
+                    <td class="num">21 168 791</td>
+                </tr>
+                <tr>
+                    <td>Rio de Janeiro</td>
+                    <td class="num">17 264 943</td>
+                </tr>
+                <tr>
+                    <td>Goiás</td>
+                    <td class="num">6 551 322</td>
+                </tr>
+                <tr>
+                    <td>Distrito Federal</td>
+                    <td class="num">2 867 869</td>
+                </tr>
+                <tr>
+                    <td>Ceará</td>
+                    <td class="num">8 867 448</td>
+                </tr>
+                <tr>
+                    <td>Mato Grosso do Sul</td>
+                    <td class="num">2 630 098</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <th scope="row">Total de habitantes</th>
+                <td class="num">0000</td>
+            </tfoot>
+        </table>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore nam, voluptatibus, facere sapiente saepe nihil rem illo nostrum qui nulla sint quos. Eaque minus reiciendis consequatur inventore. Autem, enim laborum! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem ducimus maiores dolorum explicabo. Sed quidem officia assumenda, dolorum asperiores, quasi quia natus odit unde similique beatae facilis, non modi soluta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quis sapiente amet. Dolore et aut minima perferendis. Quis numquam quisquam ex iste quos, totam, et tenetur aliquam vel autem eaque? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum beatae id animi ea autem delectus, assumenda ipsa numquam corrupti totam similique nesciunt officia quas saepe quos amet dicta fugit! Beatae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore temporibus ducimus ullam vitae, nam impedit fuga cupiditate, facere mollitia id aliquid, fugiat explicabo suscipit iusto sapiente dolore harum laborum excepturi.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore nam, voluptatibus, facere sapiente saepe nihil rem illo nostrum qui nulla sint quos. Eaque minus reiciendis consequatur inventore. Autem, enim laborum! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem ducimus maiores dolorum explicabo. Sed quidem officia assumenda, dolorum asperiores, quasi quia natus odit unde similique beatae facilis, non modi soluta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quis sapiente amet. Dolore et aut minima perferendis. Quis numquam quisquam ex iste quos, totam, et tenetur aliquam vel autem eaque? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum beatae id animi ea autem delectus, assumenda ipsa numquam corrupti totam similique nesciunt officia quas saepe quos amet dicta fugit! Beatae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore temporibus ducimus ullam vitae, nam impedit fuga cupiditate, facere mollitia id aliquid, fugiat explicabo suscipit iusto sapiente dolore harum laborum excepturi.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore nam, voluptatibus, facere sapiente saepe nihil rem illo nostrum qui nulla sint quos. Eaque minus reiciendis consequatur inventore. Autem, enim laborum! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem ducimus maiores dolorum explicabo. Sed quidem officia assumenda, dolorum asperiores, quasi quia natus odit unde similique beatae facilis, non modi soluta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quis sapiente amet. Dolore et aut minima perferendis. Quis numquam quisquam ex iste quos, totam, et tenetur aliquam vel autem eaque? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum beatae id animi ea autem delectus, assumenda ipsa numquam corrupti totam similique nesciunt officia quas saepe quos amet dicta fugit! Beatae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore temporibus ducimus ullam vitae, nam impedit fuga cupiditate, facere mollitia id aliquid, fugiat explicabo suscipit iusto sapiente dolore harum laborum excepturi.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore nam, voluptatibus, facere sapiente saepe nihil rem illo nostrum qui nulla sint quos. Eaque minus reiciendis consequatur inventore. Autem, enim laborum! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem ducimus maiores dolorum explicabo. Sed quidem officia assumenda, dolorum asperiores, quasi quia natus odit unde similique beatae facilis, non modi soluta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quis sapiente amet. Dolore et aut minima perferendis. Quis numquam quisquam ex iste quos, totam, et tenetur aliquam vel autem eaque? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum beatae id animi ea autem delectus, assumenda ipsa numquam corrupti totam similique nesciunt officia quas saepe quos amet dicta fugit! Beatae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore temporibus ducimus ullam vitae, nam impedit fuga cupiditate, facere mollitia id aliquid, fugiat explicabo suscipit iusto sapiente dolore harum laborum excepturi.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore nam, voluptatibus, facere sapiente saepe nihil rem illo nostrum qui nulla sint quos. Eaque minus reiciendis consequatur inventore. Autem, enim laborum! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem ducimus maiores dolorum explicabo. Sed quidem officia assumenda, dolorum asperiores, quasi quia natus odit unde similique beatae facilis, non modi soluta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quis sapiente amet. Dolore et aut minima perferendis. Quis numquam quisquam ex iste quos, totam, et tenetur aliquam vel autem eaque? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum beatae id animi ea autem delectus, assumenda ipsa numquam corrupti totam similique nesciunt officia quas saepe quos amet dicta fugit! Beatae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore temporibus ducimus ullam vitae, nam impedit fuga cupiditate, facere mollitia id aliquid, fugiat explicabo suscipit iusto sapiente dolore harum laborum excepturi.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore nam, voluptatibus, facere sapiente saepe nihil rem illo nostrum qui nulla sint quos. Eaque minus reiciendis consequatur inventore. Autem, enim laborum! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem ducimus maiores dolorum explicabo. Sed quidem officia assumenda, dolorum asperiores, quasi quia natus odit unde similique beatae facilis, non modi soluta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quis sapiente amet. Dolore et aut minima perferendis. Quis numquam quisquam ex iste quos, totam, et tenetur aliquam vel autem eaque? 
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum beatae id animi ea autem delectus, assumenda ipsa numquam corrupti totam similique nesciunt officia quas saepe quos amet dicta fugit! Beatae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore temporibus ducimus ullam vitae, nam impedit fuga cupiditate, facere mollitia id aliquid, fugiat explicabo suscipit iusto sapiente dolore harum laborum excepturi.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore nam, voluptatibus, facere sapiente saepe nihil rem illo nostrum qui nulla sint quos. Eaque minus reiciendis consequatur inventore. Autem, enim laborum! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem ducimus maiores dolorum explicabo. Sed quidem officia assumenda, dolorum asperiores, quasi quia natus odit unde similique beatae facilis, non modi soluta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quis sapiente amet. Dolore et aut minima perferendis. Quis numquam quisquam ex iste quos, totam, et tenetur aliquam vel autem eaque? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum beatae id animi ea autem delectus, assumenda ipsa numquam corrupti totam similique nesciunt officia quas saepe quos amet dicta fugit! Beatae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore temporibus ducimus ullam vitae, nam impedit fuga cupiditate, facere mollitia id aliquid, fugiat explicabo suscipit iusto sapiente dolore harum laborum excepturi.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore nam, voluptatibus, facere sapiente saepe nihil rem illo nostrum qui nulla sint quos. Eaque minus reiciendis consequatur inventore. Autem, enim laborum! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem ducimus maiores dolorum explicabo. Sed quidem officia assumenda, dolorum asperiores, quasi quia natus odit unde similique beatae facilis, non modi soluta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quis sapiente amet. Dolore et aut minima perferendis. Quis numquam quisquam ex iste quos, totam, et tenetur aliquam vel autem eaque? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum beatae id animi ea autem delectus, assumenda ipsa numquam corrupti totam similique nesciunt officia quas saepe quos amet dicta fugit! Beatae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore temporibus ducimus ullam vitae, nam impedit fuga cupiditate, facere mollitia id aliquid, fugiat explicabo suscipit iusto sapiente dolore harum laborum excepturi.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore nam, voluptatibus, facere sapiente saepe nihil rem illo nostrum qui nulla sint quos. Eaque minus reiciendis consequatur inventore. Autem, enim laborum! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem ducimus maiores dolorum explicabo. Sed quidem officia assumenda, dolorum asperiores, quasi quia natus odit unde similique beatae facilis, non modi soluta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quis sapiente amet. Dolore et aut minima perferendis. Quis numquam quisquam ex iste quos, totam, et tenetur aliquam vel autem eaque? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum beatae id animi ea autem delectus, assumenda ipsa numquam corrupti totam similique nesciunt officia quas saepe quos amet dicta fugit! Beatae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore temporibus ducimus ullam vitae, nam impedit fuga cupiditate, facere mollitia id aliquid, fugiat explicabo suscipit iusto sapiente dolore harum laborum excepturi.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore nam, voluptatibus, facere sapiente saepe nihil rem illo nostrum qui nulla sint quos. Eaque minus reiciendis consequatur inventore. Autem, enim laborum! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem ducimus maiores dolorum explicabo. Sed quidem officia assumenda, dolorum asperiores, quasi quia natus odit unde similique beatae facilis, non modi soluta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quis sapiente amet. Dolore et aut minima perferendis. Quis numquam quisquam ex iste quos, totam, et tenetur aliquam vel autem eaque? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum beatae id animi ea autem delectus, assumenda ipsa numquam corrupti totam similique nesciunt officia quas saepe quos amet dicta fugit! Beatae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore temporibus ducimus ullam vitae, nam impedit fuga cupiditate, facere mollitia id aliquid, fugiat explicabo suscipit iusto sapiente dolore harum laborum excepturi.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore nam, voluptatibus, facere sapiente saepe nihil rem illo nostrum qui nulla sint quos. Eaque minus reiciendis consequatur inventore. Autem, enim laborum! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem ducimus maiores dolorum explicabo. Sed quidem officia assumenda, dolorum asperiores, quasi quia natus odit unde similique beatae facilis, non modi soluta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quis sapiente amet. Dolore et aut minima perferendis. Quis numquam quisquam ex iste quos, totam, et tenetur aliquam vel autem eaque? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum beatae id animi ea autem delectus, assumenda ipsa numquam corrupti totam similique nesciunt officia quas saepe quos amet dicta fugit! Beatae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore temporibus ducimus ullam vitae, nam impedit fuga cupiditate, facere mollitia id aliquid, fugiat explicabo suscipit iusto sapiente dolore harum laborum excepturi.</p>
 </body>
 </html>
