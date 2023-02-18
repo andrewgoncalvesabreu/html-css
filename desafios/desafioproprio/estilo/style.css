@@ -98,6 +98,35 @@ nav > a#twitter:hover {
     padding:20px;
     margin-top: 20px;
     background-image:linear-gradient(to right , rgba(255, 255, 255, 0.155) , transparent) ;
-    
  }
 
+div > article > p > a {
+    margin-left: 18%;
+    padding: 60px;
+    font-size: 80px;
+ }
+
+ div > article > p {
+    padding: 15px;
+ }
+
+ div {
+    background-image:linear-gradient(to right , rgba(255, 255, 255, 0.155) , transparent) ;
+ }
+
+ .meugithub {
+    font-weight: bolder;
+    color: #894da0;
+    text-decoration: none;
+ }
+
+ .meugithub:hover {
+    text-decoration: underline;
+ }
+
+ footer {
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 20px;
+ }
