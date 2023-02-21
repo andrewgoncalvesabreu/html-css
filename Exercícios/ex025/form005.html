@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <style>
+        body {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        legend {
+            text-align: center;
+            text-decoration: underline;
+            font-weight: bolder;
+            font-size: 30px;
+        }
+        fieldset {
+            border: 3px solid black;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Checkbox e botão de rádio</h1>
+    <form action="cadastro.php">
+        <fieldset>
+            <legend>Gênero</legend>
+            <p>
+                <input type="radio" name="genero" id="gmas" value="M">
+                <label for="gmas">Masculino</label>
+            </p>
+            <p>
+                <input type="radio" name="genero" id="gfem" value="F">
+                <label for="gfem">Feminino</label>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Esportes favoritos</legend>
+            <input type="checkbox" name="efut" id="iefut"> <label for="iefut">Futebol</label> <br>
+            <input type="checkbox" name="ebas" id="iebas"> <label for="iebas">Basquete</label>  <br>
+            <input type="checkbox" name="ehoquei" id="iehoquei"> <label for="iehoquei">Hóquei</label> <br>
+            <input type="checkbox" name="evolei" id="ievolei"> <label for="ievolei">Vôlei</label> <br>
+            <input type="checkbox" name="eboxe" id="ieboxe"> <label for="ieboxe">Boxe</label> <br>
+            <input type="checkbox" name="etenis" id="ietenis"> <label for="ietenis">Tênis</label> <br>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Apagar">
+        </p>
+    </form>
+</body>
+</html>
