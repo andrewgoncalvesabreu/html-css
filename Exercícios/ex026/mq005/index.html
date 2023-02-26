@@ -7,8 +7,9 @@
     <title>"Projeto" Utilizando MQ para diferentes telas</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/mediaquery.css">
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Site do Andrew</h1>
         <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
@@ -30,7 +31,16 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat non quibusdam at enim recusandae aut optio laborum quasi perferendis quaerat, saepe ducimus repellat. Impedit, et maiores voluptatum unde magnam quod! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia excepturi quidem repudiandae inventore fuga deserunt quisquam velit dicta asperiores minus id ab enim similique itaque eveniet molestias, necessitatibus at iste. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure quisquam ratione velit, excepturi deleniti impedit reprehenderit voluptatibus, odit beatae modi commodi cupiditate. Magni, explicabo nesciunt dolorum dolore placeat nihil maiores? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi accusantium ea, illo libero pariatur distinctio esse inventore rerum incidunt explicabo at delectus non quidem, natus tempora! Quasi quia tenetur praesentium! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat vel blanditiis cumque nam! Id sapiente illo, libero ipsum cupiditate aliquid dolore fugiat alias nemo obcaecati ullam nihil ipsa minima? Repudiandae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis excepturi cupiditate ullam nisi alias nulla maiores officiis facere ipsa, architecto cumque dolorum, culpa assumenda quos eius quod maxime. Adipisci, consequatur. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit expedita optio, aliquid rerum non laudantium debitis qui provident, assumenda iusto ducimus ratione veritatis ipsa ut sint, corrupti recusandae fugiat natus?</p>
         </article>
     </main>
-    <script>
+    <script> 
+
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+
         function clickMenu() {
             if (itens.style.display == 'block') {
                 itens.style.display = 'none'
