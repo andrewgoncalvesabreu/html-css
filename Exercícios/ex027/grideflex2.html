@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Um esboço usando grid e flex</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header {
+            background-color: black;
+            height: 40px;
+            margin: 20px;
+            padding: 10px;
+            margin-bottom: -15px;
+        }
+
+        header > div.coisasnoheader > a {
+            text-decoration: none;
+            color: white;
+        }
+
+        header > div.coisasnoheader > a:hover {
+            text-decoration: underline;
+            color: white;
+        }
+
+        .coisasnoheader {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-top: 12px;
+        }
+
+        .todoconteudo {
+            margin-bottom: -30px;
+        }
+
+        nav {
+            background-color: #8B0000;
+            height: 60px;
+            padding: 15px;
+            display: flex;
+            justify-content: space-around;
+            margin: 30px;
+        }
+
+        div.todoconteudo > nav > div.home > a {
+            color: white;
+            text-decoration: none;
+            font-weight: bolder ;
+            font-size: 20px;
+        }
+
+
+        div.todoconteudo > nav > div.produtos > a {
+            color: white;
+            text-decoration: none;
+            font-weight: bolder ;
+            font-size: 20px;
+        }
+
+        div.todoconteudo > nav > div.contato > a {
+            color: white;
+            text-decoration: none;
+            font-weight: bolder ;
+            font-size: 20px;
+        }
+
+        div.todoconteudo > nav > div.home > p {
+            color: #A7A9A9;
+            font-weight: lighter;
+            padding-top: 6px;
+        }
+
+        div.todoconteudo > nav > div.produtos > p {
+            color: #A7A9A9;
+            font-weight: lighter;
+            padding-top: 6px;
+        }
+
+        div.todoconteudo > nav > div.contato > p {
+            color: #A7A9A9;
+            font-weight: lighter;
+            padding-top: 6px;
+        }
+
+        aside {
+            position: fixed;
+            left: 0px;
+            padding: 0px;
+            margin-left: 30px;
+            width: 20%;
+            height: 280px;
+            background-color: #006400;
+        }
+
+        aside > p {
+            color: white;
+            margin-top: 2px;
+        }
+
+        main {
+            background-color: #FF8C00;
+            height: 280px;
+            width: 80%;
+            position: absolute; 
+            right: 30px;       
+        }
+        
+        main > p {
+            color: white;
+            margin-top: 2px;
+        }
+
+        footer {
+            background-color: blue;
+            height: 8%;
+            margin-left: 30px;
+            position: absolute;
+            bottom: 26.9%;
+            width: 1476px;
+        }
+
+        footer > p {
+            color: white;
+            margin-top: 2px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        
+            <div class="coisasnoheader">
+                <a href="#">Result</a>
+                <a href="#">Edit in JS</a>
+            </div>
+    </header>
+    <div class="todoconteudo cabecalhosecundario">
+        <nav>
+            <div class="home">
+                <a href="#">Home</a>
+                <p>Some description</p>
+            </div>
+            <div class="produtos">
+                <a href="#">Products</a>
+                <p>Some description</p>
+            </div>
+            <div class="contato">
+                <a href="#">Contact</a>
+                <p>Some description</p>
+            </div>
+        </nav>
+    </div>
+    <aside>
+        <p>Aside</p>
+    </aside>
+    <main>
+        <p>Main</p>
+    </main>
+    <footer>
+        <p>Footer</p>
+    </footer>
+</body>
+</html>
